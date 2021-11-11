@@ -1,0 +1,30 @@
+ /* banner styles */
+
+ .banner-section{
+    background-image: url(https://i.ibb.co/bHcSpQn/slider-222.jpg);
+    background-repeat: no-repeat;
+    height: 100%;
+    background-size: cover;
+    color:rgb(255, 31, 31);
+}
+
+/* banner title styles  */
+.banner-section h6{
+    margin-top: -0px;
+    padding-bottom: 100px;
+    padding-right: 10px;
+    font-size: 60px;
+    font-weight: bolder;
+    text-align:right;
+    color: rgb(123, 221, 26);
+    font-family:cursive;
+}
+/* banner text styles  */
+.banner-section p{
+    font-size: 22px;
+    color: rgb(136, 158, 65);
+    text-align: end;
+    font-weight:bolder;
+   padding: 70px;
+    font-family:'Courier New', Courier, monospace;
+}
