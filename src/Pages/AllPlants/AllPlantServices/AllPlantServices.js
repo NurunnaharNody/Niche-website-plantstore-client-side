@@ -7,7 +7,7 @@ import AllPlantService from '../AllPantService/AllPlantService';
 const AllPlantServices = () => {
     const [services, setServices] = useState([]);
     useEffect(() => {
-          fetch('http://localhost:5000/services')
+          fetch('https://agile-hollows-82713.herokuapp.com/services')
           .then(res => res.json())
           .then(data=> setServices(data));
     }, [])
