@@ -8,6 +8,7 @@ import Dashboard from './Pages/Dashboard/Dashboard/Dashboard';
 import PrivateRoute from './Pages/LogIn/PrivateRoute/PrivateRoute';
 import AllPlantServices from './Pages/AllPlants/AllPlantServices/AllPlantServices';
 import OrderDetails from './Pages/OrderDetails/OrderDetails';
+import NotFound from './Pages/NotFound/NotFound';
 
 
 function App() {
@@ -36,6 +37,9 @@ function App() {
        </PrivateRoute>
        <Route exact path="/">
        <Home></Home>
+       </Route>
+       <Route path="*">
+         <NotFound></NotFound>
        </Route>
      </Switch>
      </BrowserRouter>

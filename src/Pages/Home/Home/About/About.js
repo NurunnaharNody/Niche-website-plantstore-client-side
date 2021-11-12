@@ -22,10 +22,10 @@ const About = () => {
          </Box>
   </Grid>
   <Grid item xs={12} sm={12} md={12} sx={{my:5}}>
-    <img  style={{width: 'auto'}} src="https://i.ibb.co/BC1d7mg/banner-4.jpg" alt="" />
+    <img  style={{width: '90%'}} src="https://i.ibb.co/BC1d7mg/banner-4.jpg" alt="" />
   </Grid>
   <Grid item xs={12} sm={12} md={12} sx={{my:5}}>
-    <img  style={{width: 'auto'}} src="https://i.ibb.co/sypBx5h/banner-5.jpg" alt="" />
+    <img  style={{width: '90%'}} src="https://i.ibb.co/sypBx5h/banner-5.jpg" alt="" />
   </Grid>
 </Grid>
 </Container>

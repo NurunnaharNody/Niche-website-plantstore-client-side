@@ -25,6 +25,7 @@ const AddReview = () => {
     <form onSubmit={handleSubmit(onSubmit)}>
            <textarea {...register("description")} placeholder="Details"/>
            <input {...register("img")} placeholder="Img url" />
+           <input type="number" {...register("rating", { min: 0, max: 5 })} placeholder="Rating" />
            <input className="add-review-button" type="submit" />
     </form>
         </Box>
