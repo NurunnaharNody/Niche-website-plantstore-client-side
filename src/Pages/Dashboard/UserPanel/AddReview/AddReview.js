@@ -3,9 +3,11 @@ import { Box } from '@mui/system';
 import axios from 'axios';
 import React from 'react';
 import { useForm } from "react-hook-form";
+import useAuth from '../../../../hooks/useAuth'
 import './AddReview.css';
 
 const AddReview = () => {
+     const {user} = useAuth();
     const { register, handleSubmit, reset } = useForm();
     const onSubmit = data => {
         console.log(data)
@@ -23,6 +25,10 @@ const AddReview = () => {
           Add Your Experience With Us..:)
         </Typography>
     <form onSubmit={handleSubmit(onSubmit)}>
+    <input {...register("name", { required: true, maxLength: 20 })}
+        value={user.displayName} />
+        <input {...register("email", { required: true, maxLength: 20 })}
+        value={user.email} />
            <textarea {...register("description")} placeholder="Details"/>
            <input {...register("img")} placeholder="Img url" />
            <input type="number" {...register("rating", { min: 0, max: 5 })} placeholder="Rating" />

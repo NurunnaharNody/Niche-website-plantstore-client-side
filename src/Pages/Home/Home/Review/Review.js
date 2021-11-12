@@ -7,7 +7,7 @@ import { CardActionArea, Grid } from '@mui/material';
 import Rating from 'react-rating';
 
 const Review = (props) => {
-    const {description, img, rating} =props.review;
+    const {name,description, img, rating} =props.review;
   return (
     <Grid item xs={12} sm={12} md={4}>
     <Card  sx={{ maxWidth: 445 }}  style={{ margin: '2px', backgroundColor:'rgb(134, 224, 141)'}}>
@@ -19,6 +19,9 @@ const Review = (props) => {
           alt="green iguana"
         />
         <CardContent>
+        <Typography variant="body2" style={{color: 'rgb(80, 20, 3)', fontSize: '20px', fontWeight:'bolder'}}>
+             {name}
+          </Typography>
           <Typography variant="body2" style={{color: 'rgb(8, 105, 40)'}}>
             {description}
           </Typography>
