@@ -1,11 +1,12 @@
-import { Button, Grid, Typography } from '@mui/material';
+import { Button, Container, Grid, Typography } from '@mui/material';
 import { Box } from '@mui/system';
 import React from 'react';
 
 const About = () => {
     return (
+      <Container>
         <Grid container spacing={3}  style={{paddingTop :'30px'}}>
-  <Grid item xs={12} md={4}>
+  <Grid item xs={12} sm={12} md={12}>
   <Box>
           <Typography style={{color:' rgb(123, 221, 26)'}} sx={{fontWeight:900, my:5}} variant="h4" component="div">
           Plant Store
@@ -20,13 +21,14 @@ const About = () => {
           <Button variant="contained"  style={{backgroundColor:'rgb(60, 192, 104)'}}>Learn More</Button>
          </Box>
   </Grid>
-  <Grid item xs={12} md={4} sx={{my:5}}>
-    <img src="https://i.ibb.co/BC1d7mg/banner-4.jpg" alt="" />
+  <Grid item xs={12} sm={12} md={12} sx={{my:5}}>
+    <img  style={{width: 'auto'}} src="https://i.ibb.co/BC1d7mg/banner-4.jpg" alt="" />
   </Grid>
-  <Grid item xs={12} md={4} sx={{my:5}}>
-    <img src="https://i.ibb.co/sypBx5h/banner-5.jpg" alt="" />
+  <Grid item xs={12} sm={12} md={12} sx={{my:5}}>
+    <img  style={{width: 'auto'}} src="https://i.ibb.co/sypBx5h/banner-5.jpg" alt="" />
   </Grid>
 </Grid>
+</Container>
     );
 };
 

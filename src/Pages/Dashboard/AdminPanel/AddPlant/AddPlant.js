@@ -5,7 +5,7 @@ import React from 'react';
 import { useForm } from "react-hook-form";
 import './AddPlant.css';
 
-const AddService = () => {
+const AddPlant = () => {
     const { register, handleSubmit,reset } = useForm();
     const onSubmit = data => {
         console.log(data)
@@ -18,7 +18,7 @@ const AddService = () => {
         })
     };
     return (
-        <Box className="add-service">
+        <Box className="add-plant-service">
             <Typography style={{color:' rgb(123, 221, 26)', fontSize:'20px'}} sx={{fontWeight:900, my:5}} variant="h1" component="div">
           Add A Plant Service
         </Typography>
@@ -28,10 +28,10 @@ const AddService = () => {
            <textarea {...register("description")} placeholder="Details"/>
            <input type="number" {...register("price")} placeholder="Price" />
            <input {...register("img")} placeholder="Img url" />
-           <input type="submit" />
+           <input className="add-plant-button" type="submit" />
     </form>
         </Box>
     );
 };
 
-export default AddService;                                                                                                                                                                                                                                       
+export default AddPlant;                                                                                                                                                                                                                                       

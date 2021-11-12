@@ -22,7 +22,8 @@ import {
   Route,
   Link,
 
-  useRouteMatch
+  useRouteMatch,
+  NavLink
 } from "react-router-dom";
 import Pay from '../UserPanel/Pay/Pay';
 import MyOrder from '../UserPanel/MyOrder/MyOrder';
@@ -40,7 +41,7 @@ const drawerWidth = 240;
 function Dashboard(props) {
   const { window } = props;
   const [mobileOpen, setMobileOpen] = React.useState(false);
-  const {admin} = useAuth();
+  const {user, logout, admin} = useAuth();
   let { path, url } = useRouteMatch();
   const handleDrawerToggle = () => {
     setMobileOpen(!mobileOpen);
@@ -55,7 +56,6 @@ function Dashboard(props) {
       {
           !admin &&
           <Box>
-      <Link style={{textDecoration: 'none', color: 'rgb(15, 97, 43)', fontWeight: 900}} to="/services"> <Button color="inherit">More plants</Button></Link> <br/> <br/>
       <Link style={{textDecoration: 'none', color: 'rgb(15, 97, 43)', fontWeight: 900}} to={`${url}/pay`}> <Button color="inherit">Pay</Button></Link> <br/> <br/>
       <Link style={{textDecoration: 'none', color: 'rgb(15, 97, 43)', fontWeight: 900}} to={`${url}/myOrder`}> <Button color="inherit">My Orders</Button></Link> <br/> <br/>
       <Link style={{textDecoration: 'none', color: 'rgb(15, 97, 43)', fontWeight: 900}} to={`${url}/addReview`}> <Button color="inherit">Add Review</Button></Link>
@@ -70,6 +70,16 @@ function Dashboard(props) {
       <Link style={{textDecoration: 'none', color: 'rgb(15, 97, 43)', fontWeight: 900}} to={`${url}/makeAdmin`}> <Button color="inherit">Make Admin</Button></Link>
        </Box>
      }
+
+{
+                        user?.email ?
+                                <Button onClick={logout} color="inherit">Logout</Button> 
+                                :
+                                <NavLink style={{ textDecoration: 'none', color: 'white' }} to="/login">
+                                <Button color="inherit">Login</Button>
+                                </NavLink>
+                            
+                    }
      
       <List>
         {[].map((text, index) => (

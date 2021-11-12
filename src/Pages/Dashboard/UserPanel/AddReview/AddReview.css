@@ -1,0 +1,19 @@
+.add-review-service form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;  
+}
+
+.add-review-service form input, textarea{
+  width: 40%;
+  margin: 15px;
+  padding:10px;
+}
+
+.add-review-button{
+    color: rgb(6, 44, 3);
+    background-color:rgb(158, 228, 89);
+    font-weight: bolder;
+    font-family: monospace;
+}

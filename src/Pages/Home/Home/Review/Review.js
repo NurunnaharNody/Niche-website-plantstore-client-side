@@ -9,7 +9,7 @@ const Review = (props) => {
     const {description, img} =props.review;
   return (
     <Grid item xs={12} sm={12} md={4}>
-    <Card  sx={{ maxWidth: 445 }} style={{margin: '10px', backgroundColor:'rgb(203, 255, 107)'}}>
+    <Card  sx={{ maxWidth: 445 }}  style={{ margin: '2px', backgroundColor:'rgb(203, 255, 107)'}}>
       <CardActionArea>
         <CardMedia
           component="img"

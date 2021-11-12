@@ -1,12 +1,19 @@
-.add-service form{
+.add-plant-service form{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;  
 }
 
-.add-service form input, textarea{
+.add-plant-service form input, textarea{
   width: 40%;
   margin: 15px;
   padding:10px;
+}
+
+.add-plant-button{
+  color: rgb(6, 44, 3);
+  background-color:rgb(158, 228, 89);
+  font-weight: bolder;
+  font-family: monospace;
 }

@@ -8,7 +8,7 @@ import { Link } from 'react-router-dom';
 const AllPlantService = (props) => {
     const {_id, name, description, price, img} =props.service;
     return (
-        <Grid item xs={2} sm={12} md={4}>
+        <Grid item xs={12} sm={12} md={4}>
         <Card sx={{  border:0,  boxShadow: 0}}>
         <CardMedia
         component="img"
