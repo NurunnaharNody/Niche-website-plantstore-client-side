@@ -36,7 +36,7 @@ const ManageProducts = () => {
         </Typography>
                 {
                     products.map(product => <div key={product._id}>
-        <Grid item sm={12} md={12}>
+        <Grid item sm={12} md={8}>
         <Card sx={{  border:0,  boxShadow: 0}}>
         <CardMedia
         component="img"
