@@ -40,7 +40,7 @@ const ManageProducts = () => {
         <Card sx={{  border:0,  boxShadow: 0}}>
         <CardMedia
         component="img"
-        style={{width: 'auto', margin:'0 auto'}}
+        style={{width: '90%', margin:'0 auto'}}
         image={product.img}
         alt="Paella dish"
       />

@@ -36,8 +36,8 @@ const ManageOrders = () => {
         </Typography>
                 { 
                    orders.map(order => <div key={order._id}>
-                       <Grid item xs={2} sm={12} md={12}>
-        <Card sx={{ border:1,  boxShadow: 2}} style={{backgroundColor:'rgb(207, 255, 185)'}}>
+                       <Grid item xs={12} sm={12} md={12}>
+        <Card sx={{ border:1,  boxShadow: 2}} style={{width:'auto', backgroundColor:'rgb(207, 255, 185)'}}>
       <CardContent>
       <Typography style={{color:'rgb(146, 41, 15)', fontWeight:900}} variant="h5" component="div">
          Name of plant: {order.name}

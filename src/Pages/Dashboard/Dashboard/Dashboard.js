@@ -34,6 +34,7 @@ import MakeAdmin from '../AdminPanel/MakeAdmin/MakeAdmin';
 import ManageProduct from '../AdminPanel/ManageProduct/ManageProduct'
 import DashboardHome from '../DashboardHome/DashboardHome';
 import useAuth from '../../../hooks/useAuth';
+import AdminRoute from '../../LogIn/AdminRoute/AdminRoute';
 
 
 const drawerWidth = 240;
@@ -171,18 +172,18 @@ function Dashboard(props) {
         <Route path={`${path}/addReview`}>
           <AddReview></AddReview>
         </Route>
-        <Route path={`${path}/manageOrder`}>
+        <AdminRoute path={`${path}/manageOrder`}>
          <ManageOrders></ManageOrders>
-        </Route>
-        <Route path={`${path}/manageProducts`}>
+        </AdminRoute>
+        <AdminRoute path={`${path}/manageProducts`}>
           <ManageProduct></ManageProduct>
-        </Route>
-        <Route path={`${path}/makeAdmin`}>
+        </AdminRoute>
+        <AdminRoute path={`${path}/makeAdmin`}>
           <MakeAdmin></MakeAdmin>
-        </Route>
-        <Route path={`${path}/addPlants`}>
+        </AdminRoute>
+        <AdminRoute path={`${path}/addPlants`}>
           <AddPlant></AddPlant>
-        </Route>
+        </AdminRoute>
       </Switch>
         <Typography paragraph>
         
